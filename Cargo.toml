@@ -1,0 +1,15 @@
+[package]
+name = "rotato"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+winsafe = { version = "0.0.9", features = ["user", "gui"] }
+hotkey = "0.3.1"
+crossbeam = "0.8"
+
+[patch.crates-io]
+winsafe = { path = '../winsafe' }
+
